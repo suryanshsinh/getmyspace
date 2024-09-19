@@ -1,0 +1,57 @@
+li:hover > .navlink::after {
+    opacity: 1;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+    animation: slideIn 0.3s ease-in-out 1;
+    background-color: #fff;
+}
+
+li > .navlink::after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+    animation: slideOut 0.3s ease-in-out 1;
+    background-color: #fff;
+}
+
+@keyframes slideIn {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        left: 100%;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

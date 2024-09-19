@@ -1,0 +1,8 @@
+.member::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    top: 60%;
+    border-radius: 0 0 11px 11px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}

@@ -1,0 +1,30 @@
+.heading::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 5px;
+    border-radius: 10px;
+    /* background: linear-gradient(0deg, #f1c40f, #F8D73A); */
+    background: radial-gradient(circle, #F8D73A, #ea8b37);
+}
+
+.animate-bg {
+    background: linear-gradient(135deg, #F8D73A 0%, #F8D73A 45%, #eee 55%, #F8D73A 65%, #F8D73A 100%);
+    background-size: 200% 200%;
+    animation: slide-bg-ltr 5s linear infinite forwards;
+}
+
+@keyframes slide-bg-ltr {
+    0% {
+        background-position: 200% 0%;
+    }
+    30% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
